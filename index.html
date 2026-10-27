@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Cadastro de herois</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/post.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Cadastro de heróis</h1>
+      <p>Preencha os dados abaixo!!!</p>
+    </header>
+    <main>
+      <section>
+        <h2>Novo herói</h2>
+
+        <form id="form-heroi">
+          <label for="title">Nome do heroi: </label>
+          <input id="title" name="title" type="text" minlength="3" maxlength="120" required />
+
+          <label for="poder">Poder: </label>
+          <input id="poder" name="poder" type="text" required />
+
+          <label for="universo">Universo: </label>
+          <input id="universo" name="universo" type="text" required />
+
+          <label for="fraqueza">Fraqueza: </label>
+          <input id="fraqueza" name="fraqueza" type="text" required />
+
+          <label for="imageUrl">URL da imagem (opcional): </label>
+          <input id="imageUrl" name="imageUrl" type="url" />
+
+          <button type="submit">Cadastrar heroi</button>
+        </form>
+
+        <p id="resposta"></p>
+      </section>
+    </main>
+  </body>
+</html>
